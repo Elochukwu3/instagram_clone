@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Search</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .page-container {
+            background-color: #1b1b1b;
+            width: 100%;
+            padding: 10px 0;
+            height: 95vh;
+        }
+
+        form {
+            /* border: 2px solid black; */
+            display: flex;
+            /* justify-content: center; */
+            width: 90%;
+            height: 20px;
+            margin: auto;
+            border-radius: 2px;
+            background-color: dimgray;
+            padding-left: 10px;
+            align-items: center;
+            color: #323130;
+        }
+
+        .serch {
+            border: unset;
+            background-color: gray;
+            width: 100%;
+            background-color: dimgray;
+            padding: 0 4px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 5px 0;
+        }
+
+         .double{
+        grid-row-start:2;
+        grid-row-end: 3;
+        width: 130px;
+        height: 200px;
+        
+    /* border-radius: 50px; */
+    /* background-color: grey ; */
+        }
+        .search-img {
+            width: 105px;
+            height: 100px;
+        }
+
+        .last-sect {
+            display: flex;
+            flex-wrap: wrap;
+            /* padding: 5px 10px; */
+            justify-content: space-around;
+            background-color: black;
+            width: 100%;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            /* position: absol; */
+            z-index: 7;
+        }
+
+        .profile-img2 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            align-items: center;
+            /* transform: rotate(350deg); */
+            border: 2px solid black;
+        }
+
+        .last {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <div>
+            <form>
+                <i class="fas fa-search" style="font-size: 12px;"></i>
+                <input type="search" placeholder="Search" class="serch">
+            </form>
+        </div>
+        <!-- gallery -->
+        <div class="gallery">
+            <div><img src="./images/img15.jpg" class="search-img"></div>
+            <div><img src="./images/img14.jpg" class="search-img"></div>
+            <div><img src="./images/img17.jpg" class="search-img"></div>
+            <div><img src="./images/img1.jpg" class="search-img"></div>
+            <div><img src="./images/img12.jpg" class="search-img"></div>
+            <div><img src="./images/img8.jpg" class=" search-img double"></div>
+            <div><img src="./images/img10.jpg" class="search-img"></div>
+            <div><img src="./images/img11.jpg" class="search-img"></div>
+            <div><img src="./images/img7.jpg" class="search-img"></div>
+            <div><img src="./images/img6.jpg" class="search-img"></div>
+            <div><img src="./images/img5.jpg" class="search-img"></div>
+            <div><img src="./images/img4.jpg" class="search-img"></div>
+            <div><img src="./images/img4.jpg" class="search-img"></div>
+            <div><img src="./images/img4.jpg" class="search-img"></div>
+            <div><img src="./images/img4.jpg" class="search-img"></div>
+            <div><img src="./images/img4.jpg" class="search-img"></div>
+        </div>
+        <div class="last-sect">
+            <div>
+                <a href="./home.html">
+                    <img src="./images/Home.png" class="last" style="height: 15px;">
+                </a>
+            </div>
+            <div><a href="./search.html"><i class="fas fa-search last"></i></a></div>
+            <div><i class="fab fa-youtube last"></i></div>
+            <div><a href="./like.html"><i class="fas fa-heart last"></i></a></div>
+            <!-- <div><i class="fas fa-play-circle last"></i></div> -->
+            <div class="image">
+                <a href="./index.html"><img src="./images/profile.jpg" class="profile-img2"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

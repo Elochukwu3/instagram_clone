@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <!-- <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body><div class="overlay" id="overlay-drop">
+     <div class="close" onclick="closePage()">&times;</div>
+     <div class="overlay-content">
+        <div class="upper-sect"> Create a post</div>
+        <div class="main-sect">
+            <div class="main-sectInner">
+                <p><i class="fas fa-photo-video" style="color: darkgrey; font-size: 3em;"></i></p>
+            <p style="font-size: 1.5em;color: darkgrey; "> Drag photos and Videos</p>
+            <button style="background: blue; color:#fff;font-weight: bold; border-radius: 5px; padding: 8px 7px; border: unset;">select from computer</button>
+            </div>
+        </div>
+     </div>
+</div>
+
+
+
+    <div class="page-container">
+        <div class="first-section">
+            <div class="instagram">
+                <i>Instagram</i>
+                <!-- <img src="./i" alt=""> -->
+            </div>
+            <!-- search due to media query -->
+            <div class="search">
+                <i class="fas fa-search" style="color: silver;"></i>
+                <input type="search" placeholder="search" class="input">
+            </div>
+            <!-- media icons added due to media query -->
+            <div class="media-icons">
+                <img src="./images/Home.png" class="last" style="height: 25px;">
+                <a href="./messenger.html"><i class="fab fa-facebook-messenger" style="font-size: 25px;"></i></a>
+                <i class="fas fa-plus-square"  style="font-size: 25px;" onclick="postOpen()"></i>
+                <!-- <i class="fas fa-plus-square"  style="font-size: 25px;"></i> -->
+                <a href="./like.html"><i class="fas fa-heart"  style="font-size: 25px;"></i></a>
+                <div class="image">
+                    <a href="./index.html"><img src="./images/profile.jpg" class="profile-img2"></a>
+                </div>
+            </div>
+            <div class="icon">
+                <div>
+                    <a href="./newpos..html"><i class="fas fa-plus-square" style="color: white;"></i></a>
+                </div>
+                <div>
+                    <a href="./messenger.html"><i class="fab fa-facebook-messenger" style="color: white;"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- media page holder added due media query(desktop) -->
+     <div class="media-pageHolder">
+        <!-- second section (instagram-story) -->
+    <div class="demacation" >
+
+       <!--  adding slider -->
+       <div class="slider-imageSection">
+        <div class="second-section">
+            <div class="image" style="position: relative;">
+                <div>
+                    <img src="./images/profile.jpg" class="profile-img">
+                    <h3 style="font-size:11px; color: grey;">your story</h3>
+                    <div class="blue-icon">+</div>
+                </div>
+            </div>
+            <div>
+                <div class="backg"><img src="./images/img18.jpg" class="profile-img2"></div>
+                <h3 style="font-size: 12px;">joycnailed</h3>
+            </div>
+            <div>
+                <div class="backg"><img src="./images/img12.jpg" class="profile-img2"></div>
+                <h3 style="font-size: 12px;">drealclare</h3>
+            </div>
+
+            <div>
+                <div class="backg"><img src="./images/img7.jpg" class="profile-img2"></div>
+                <h3 style="font-size: 12px;">bambi_vida</h3>
+            </div>
+            <div>
+                <div class="backg"><img src="./images/img14.jpg" class="profile-img2"></div>
+                <h3 style="font-size: 12px;">bambi_vida</h3>
+            </div>
+        </div>
+        <!-- slider imgae 2
+        <div class="second-section">
+            <div>
+                <div class="backg"><img src="./images/img30.avif" class="profile-img2"></div>
+                <h3 style="font-size: 12px;">joycnailed</h3>
+            </div>
+            <div>
+                <div class="backg"><img src="./images/img26.jpg" class="profile-img2"></div>
+                <h3 style="font-size: 12px;">joycnailed</h3>
+            </div>
+            <div>
+                <div class="backg"><img src="./images/img29.jpg" class="profile-img2"></div>
+                <h3 style="font-size: 12px;">drealclare</h3>
+            </div>
+
+            <div>
+                <div class="backg"><img src="./images/img38.avif" class="profile-img2"></div>
+                <h3 style="font-size: 12px;">bola_vida</h3>
+            </div>
+            <div>
+                <div class="backg"><img src="./images/img32.jpg" class="profile-img2"></div>
+                <h3 style="font-size: 12px;">vinci_linida</h3>
+            </div>
+
+        </div> -->
+        <!--  slider ends -->
+    </div>
+        <!-- third section after story(post display) -->
+        <div class="third-section">
+
+            <div style="display: flex; align-items: center; width: 150px; justify-content: space-around;">
+                <div class="backg"><img src="./images/profile.jpg" class="profile-img2"></div>
+                <h3 style="font-size: 12px;">bambi_vida</h3>
+            </div>
+
+            <div class="ellipis"><i class="fas fa-ellipsis-h ellips-icon"></i></div>
+        </div>
+        <!-- posts (pistures) -->
+        <div class="post-image">
+            <div class="iconss">
+                <div><i class="fab fa-youtube"></i></div>
+                <div><i class="fas fa-volume-up"></i></div>
+            </div>
+        </div>
+        <div class="icon-tags">
+            <img src="./images/Like, comment, send, collect.png" class="comments-icon">
+        </div>
+        <div class="post-text" style="color: #fff; padding: 0 10px;">
+            <p style="font-size: 12px;">116,111,111 views . liked by _jb-baze</p>
+            <p style="font-size: 14px;">
+                toyin_abraham My own version is ok
+                <i class="fas fa-heart" style="font-size:8px;"></i>
+                <i class="fas fa-heart" style="font-size:8px;"></i>
+                <i class="fas fa-heart" style="font-size:8px;"></i>
+                buh nice.
+            </p>
+            <p style="font-size:13px;">
+                <a href="#" style="color: skyblue;">@theLordcharlux</a>...
+                <i style="color:grey;">more</i>
+            </p>
+            <p style="font-size:13px; color: grey;">view all 40,000 comments</p>
+        </div>
+        <!-- Add comment section -->
+        <div class="add-comment">
+            <div class="profile-comment">
+                <p><img src="./images/img16.jpg" class="comment-img"></p>
+                <p style="font-size: 13px; color:gray;">Add a comment...</p>
+            </div>
+            <div class="emoji">
+                <div><i class="fas fa-heart" style="font-size:9px; color: red;"></i></div>
+                <div>
+                    <i class="fas fa-hand-paper" style="font-size:9px;color: gold;"></i>
+                    <i class="fas fa-hand-paper" style="font-size:9px; color: gold;"></i>
+                </div>
+                <div class="black-icon">+</div>
+
+                <!-- <i class="fas fa-plus-square"></i> -->
+            </div>
+        </div>
+
+        <!-- Another post -->
+
+        <!-- third section after story(post display) -->
+        <div class="third-section">
+
+            <div style="display: flex; align-items: center; width: 150px; justify-content: space-around;">
+                <div class="backg"><img src="./images/img11.jpg" class="profile-img2"></div>
+                <h3 style="font-size: 12px;">goody_ness_01</h3>
+            </div>
+
+            <div class="ellipis"><i class="fas fa-ellipsis-h ellips-icon"></i></div>
+        </div>
+        <!-- postz -->
+        <div class="post-image2">
+            <div class="iconss">
+                <div><i class="fab fa-youtube"></i></div>
+                <div><i class="fas fa-volume-up"></i></div>
+            </div>
+        </div>
+        <div class="icon-tags">
+            <img src="./images/Like, comment, send, collect.png" class="comments-icon">
+        </div>
+        <div class="post-text" style="color: #fff; padding: 0 10px;">
+            <p style="font-size: 12px;">116,111,111 views . liked by _jb-baze</p>
+            <p style="font-size: 14px;">
+                toyin_abraham My own version is ok
+                <i class="fas fa-heart" style="font-size:8px;"></i>
+                <i class="fas fa-heart" style="font-size:8px;"></i>
+                <i class="fas fa-heart" style="font-size:8px;"></i>
+                buh nice.
+            </p>
+            <p style="font-size:13px;">
+                <a href="#" style="color: skyblue;">@theLordcharlux</a>...
+                <i style="color:grey;">more</i>
+            </p>
+            <p style="font-size:13px; color: grey;">view all 40,000 comments</p>
+        </div>
+        <!-- Add comment section -->
+        <div class="add-comment">
+            <div class="profile-comment">
+                <p><img src="./images/img16.jpg" class="comment-img"></p>
+                <p style="font-size: 13px; color:gray;">Add a comment...</p>
+            </div>
+            <div class="emoji">
+                <div><i class="fas fa-heart" style="font-size:9px; color: red;"></i></div>
+                <div>
+                    <i class="fas fa-hand-paper" style="font-size:9px;color: gold;"></i>
+                    <i class="fas fa-hand-paper" style="font-size:9px; color: gold;"></i>
+                </div>
+                <div class="black-icon">+</div>
+
+                <!-- <i class="fas fa-plus-square"></i> -->
+            </div>
+        </div>
+        <!-- Another post(3) -->
+        <!-- third section after story(post display) -->
+        <div class="third-section">
+
+            <div style="display: flex; align-items: center; width: 150px; justify-content: space-around;">
+                <div class="backg"><img src="./images/img6.jpg" class="profile-img2"></div>
+                <h3 style="font-size: 12px;">_kevin_boss001</h3>
+            </div>
+
+            <div class="ellipis"><i class="fas fa-ellipsis-h ellips-icon"></i></div>
+        </div>
+        <!-- posts -->
+        <div class="post-image3">
+            <div class="iconss">
+                <div><i class="fab fa-youtube"></i></div>
+                <div><i class="fas fa-volume-up"></i></div>
+            </div>
+        </div>
+        <div class="icon-tags">
+            <img src="./images/Like, comment, send, collect.png" class="comments-icon">
+        </div>
+        <div class="post-text" style="color: #fff; padding: 0 10px;">
+            <p style="font-size: 12px;">116,111,111 views . liked by _jb-baze</p>
+            <p style="font-size: 14px;">
+                toyin_abraham My own version is ok
+                <i class="fas fa-heart" style="font-size:8px;"></i>
+                <i class="fas fa-heart" style="font-size:8px;"></i>
+                <i class="fas fa-heart" style="font-size:8px;"></i>
+                buh nice.
+            </p>
+            <p style="font-size:13px;">
+                <a href="#" style="color: skyblue;">@theLordcharlux</a>...
+                <i style="color:grey;">more</i>
+            </p>
+            <p style="font-size:13px; color: grey;">view all 40,000 comments</p>
+        </div>
+        <!-- Add comment section -->
+        <div class="add-comment">
+            <div class="profile-comment">
+                <p><img src="./images/img16.jpg" class="comment-img"></p>
+                <p style="font-size: 13px; color:gray;">Add a comment...</p>
+            </div>
+            <div class="emoji">
+                <div><i class="fas fa-heart" style="font-size:9px; color: red;"></i></div>
+                <div>
+                    <i class="fas fa-hand-paper" style="font-size:9px;color: gold;"></i>
+                    <i class="fas fa-hand-paper" style="font-size:9px; color: gold;"></i>
+                </div>
+                <div class="black-icon">+</div>
+            </div>
+        </div>
+
+        <!-- last section; home, search etc -->
+        <div class="last-sect">
+            <div><img src="./images/Home.png" class="last" style="height: 15px;"></div>
+            <div><a href="./search.html"><i class="fas fa-search last"></i></a></div>
+            <div><i class="fab fa-youtube last"></i></div>
+            <div><a href="./like.html"><i class="fas fa-heart last"></i></a></div>
+            <div class="image">
+                <a href="./index.html"> <img src="./images/profile.jpg" class="profile-img2"></a>
+            </div>
+
+        </div>
+        <!-- --------------- -->
+    </div>  
+        <!-- static side page (added due to media query (desktop)) -->
+        <div class="static-sidePage">
+             <!-- message container4 -->
+        <div class="message-container">
+            <div class="message-image">
+                <div>
+                    <img src="./images/img42.jpg" class="top-img">
+                </div>
+                <div class="message-content">
+                    <h3 style="font-size: 15px;">CharlyMore</h3>
+                    <h5 style="color: grey;">seen <i>.8h ago</i></h3>
+
+                </div>
+            </div>
+            <div class="message-icons">Switch</i></div>
+        </div>
+        <!--  suggested followers -->
+        <div class="Suggestions">
+            <div class="message-image">
+                Suggestions For You
+            </div>
+            <div class="message-icons">See All</i></div>
+        </div>
+
+        <!--  static  two-->
+        <div class="message-container">
+            <div class="message-image">
+                <div>
+                    <img src="./images/img37.avif" class="img">
+                </div>
+                <div class="message-content">
+                    <h3 style="font-size: 15px;">CharlyMore</h3>
+                    <h5 style="color: grey;">follwed <i>.8h ago</i></h3>
+
+                </div>
+            </div>
+            <div class="message-icons">Follow</i></div>
+        </div>
+        <!--  static content three -->
+        <div class="message-container">
+            <div class="message-image">
+                <div>
+                    <img src="./images/img41.jpg" class="img">
+                </div>
+                <div class="message-content">
+                    <h3 style="font-size: 15px;">David</h3>
+                    <h5 style="color: grey;">followed you </h3>
+
+                </div>
+            </div>
+            <div class="message-icons">follow</i></div>
+        </div>
+        <!-- static content three -->
+        <div class="message-container">
+            <div class="message-image">
+                <div>
+                    <img src="./images/img27.jpg" class="img">
+                </div>
+                <div class="message-content">
+                    <h3 style="font-size: 15px;">CharlyMore</h3>
+                    <h5 style="color: grey;">suggested </h3>
+
+                </div>
+            </div>
+            <div class="message-icons">follow</i></div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
